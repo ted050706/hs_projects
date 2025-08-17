@@ -1,0 +1,63 @@
+.big-pic {
+	/* width: 10%; 設定圖片寬度為容器寬度 */
+	width: calc(50% - (8px)/2);
+	height: fit-content; /* 高度自動調整 */
+}
+
+.small-card {
+	width: 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;  /* 主軸置中 */
+}
+
+
+/* 按鈕:尺寸選項 */
+.btn-size-select {
+	width: 160px; 
+	min-height: 48px;
+  
+	background-color: var(--neutral-0);
+	color: var(--neutral-900);
+	/* default 狀態之邊線顏色 */
+	border: 1px solid var(--neutral-300);
+}
+.btn-size-select:hover {
+	border: 1px solid var(--neutral-600);
+}
+.btn-size-select:focus {
+	border: 1px solid var(--neutral-900);
+	outline: none;  /* 移除 autofocus 時的粗黑外框 */
+}
+.btn-size-select:disabled {
+	border: 1px solid var(--neutral-300);
+	color: var(--neutral-500);  /* 設定文字顏色 */
+}
+
+/* 按鈕:使用者行為 */
+.btn-customer-action {
+	width: calc((100%/2) - (8px)/2);
+	min-height: 48px;
+	border: 1px solid var(--neutral-900);
+}
+.btn-customer-action:hover {
+	background-color: var(--neutral-900);
+	color: var(--neutral-0);
+}
+/* 需要用 JS 來做到替換成黑色愛心 bi-heart-fill */
+/* .btn-customer-action:focus {
+	background-color: var(--neutral-0);
+	color: var(--neutral-900);
+} */
+/* .bi-heart:focus {
+	background-color: var(--neutral-900);
+	color: var(--neutral-900); /* 實心填滿黑色，圖示顏色設為白色 
+	}
+  */
+
+
+.black-style {
+	/* color: var(--neutral-900); */
+	background-color: var(--neutral-900);
+	color: var(--neutral-0);
+}
