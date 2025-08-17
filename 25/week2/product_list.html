@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>產品列表</title>
+
+	<!-- 引用 .css -->
+	<link rel="stylesheet" href="style/all.css" />
+	<link rel="stylesheet" href="style/product_list.css" />
+
+	<!-- 引用 Bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+</head>
+
+<body>
+
+	<!-- 導覽列 -->
+	<nav class="container py-16 d-flex justify-between align-center">
+		<!-- 左方元件 -->
+		<ul class="d-flex align-center">
+			<!-- logo 圖片 (連結到首頁) -->
+			<li>
+				<a href="index.html">
+					<img src="/img/Logo.svg" alt="logo 圖片">
+				</a>
+			</li>
+			<!-- 文字連結 -->
+			<li class="ml-48 tg-label">
+				<a href="product_list.html" class="py-12 neutral-900 td-none">商品列表
+				</a>
+			</li>
+			<li class="ml-40 tg-label">
+				<a href="story.html" class="py-12 neutral-900 td-none">品牌故事
+				</a>
+			</li>
+		</ul>
+
+		<!-- 右方元件 -->
+		<a href="#" class="p-12"><i class="bi bi-person"></i></a>
+	</nav>
+
+	<!-- 主要內容區域 -->
+	<main class="container py-32">
+
+		<!-- 麵包屑導覽 -->
+		<nav class="d-flex align-center">
+			<ol class="d-flex tg-label">
+				<li class="breadcrumb-item">
+					<a href="index.html" class="td-none neutral-600">首頁
+					</a>
+				</li>
+				<li class="breadcrumb-item">
+					所有商品
+				</li>
+			</ol>
+		</nav>
+
+		<!-- 標題 -->
+		<h1 class="mt-24 tg-H3 neutral-900">所有商品</h1>
+
+		<!-- 套用 12 格線 -->
+		<div class="row mt-24">
+			<!-- 左側列表 (2格寬) -->
+			<div class="col-2">
+				<!-- 待修：此處可再精簡 active 寫法 -->
+				<nav class="tg-label">
+					<ul>
+						<li>
+							<a href="#" class="py-8 td-none side-nav-active">所有商品</a>
+						</li>
+						<li class="mt-16">
+							<a href="#" class="py-8 td-none neutral-900">慢跑鞋</a>
+						</li>
+						<li class="mt-16">
+							<a href="#" class="py-8 td-none neutral-900">滑板鞋</a>
+						</li>
+						<li class="mt-16">
+							<a href="#" class="py-8 td-none neutral-900">厚底鞋</a>
+						</li>
+						<li class="mt-16">
+							<a href="#" class="py-8 td-none neutral-900">限定 / 聯名企劃</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- 右側主列表 (10格寬) -->
+			<div class="col-10">
+
+				<!-- 再次套用 12 格線來切版 -->
+				<div class="row">
+					<!-- 第 1 排 -->
+					<!-- 單一卡片 -->
+					<div class="col-4 mb-48">
+						<img src="img/product.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<div class="col-4 mb-48">
+						<img src="img/product-1.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<div class="col-4 mb-48">
+						<img src="img/product-2.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<!-- 第 2 排 (自動換行) -->
+					<div class="col-4 mb-48">
+						<img src="img/product-3.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<div class="col-4 mb-48">
+						<img src="img/product-4.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<div class="col-4 mb-48">
+						<img src="img/product-5.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<!-- 第 3 排 (自動換行) -->
+					<div class="col-4 mb-48">
+						<img src="img/product-6.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<div class="col-4 mb-48">
+						<img src="img/product-7.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+
+					<div class="col-4 mb-48">
+						<img src="img/product-8.png" alt="" class="pic-fit-width">
+						<p class="mt-12 tg-H6">PLATFORM 404</p>
+						<p class="mt-4 tg-label">NT$2,600</p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<!-- 頁數列 -->
+		<nav class="d-flex justify-center align-center">
+			<!-- 待修：此處可再簡化 active 寫法 -->
+			<ul class="d-flex">
+				<!-- 「上一頁」箭頭 -->
+				<li>
+					<button type="button" class="btn btn-page-nav mr-12">
+						<i class="bi bi-chevron-left tg-label"></i>
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-page-nav page-nav-active tg-label mr-8">
+						1
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-page-nav tg-label mr-8">
+						2
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-page-nav tg-label mr-8">
+						3
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-page-nav tg-label mr-8">
+						...
+					</button>
+				</li>
+				<li>
+					<button type="button" class="btn btn-page-nav tg-label mr-12">
+						10
+					</button>
+				</li>
+				<!-- 「下一頁」箭頭 -->
+				<li>
+					<button type="button" class="btn btn-page-nav tg-label">
+						<i class="bi bi-chevron-right"></i>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</main>
+
+
+	<!-- 優惠訊息 -->
+	<div class="mt-48 discount-banner">
+		<div class="ta-center d-flex justify-center align-center">
+			<p class="tg-H4 mr-24">加入會員取得 9 折優惠</p>
+			<button class="btn btn-sign-up">馬上註冊</button>
+		</div>
+	</div>
+
+
+	<!-- 表尾 -->
+	<footer class="py-64 container">
+
+		<!-- nav -->
+		<div class="d-flex justify-between align-center">
+			<a href="index.html">
+				<img src="../img/logo.svg" alt="logo" />
+			</a>
+
+			<ul class="d-flex">
+				<li class="mr-40">
+					<a href="product_list.html" class="tg-label td-none neutral-900">商品列表</a>
+				</li>
+				<li>
+					<a href="story.html" class="tg-label td-none neutral-900">品牌故事</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 版權聲明 -->
+		<div class="mt-24 bt-gray-1px">
+			<div class="pt-32 copyright-text">
+				<p>Copyright ©2025 URBNSTYLE</p>
+				<p class="mt-4">All Rights Reserved.</p>
+			</div>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
