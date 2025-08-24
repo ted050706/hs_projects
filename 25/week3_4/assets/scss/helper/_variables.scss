@@ -1,0 +1,25 @@
+/* 在根元素設定顏色樣式變數 */
+:root {
+	// 註：雖然支援 CSS 語法，但也可改用 SCSS 語法
+  $primary-100: #f5fee7;
+	// 但引用語法 color: var(--primary-100); 
+	// 需要修改成 color: $primary-100;
+
+  /* 主色調 */
+  --primary-100: #f5fee7;
+	--primary-200: #E8FEC5;
+	--primary-300: #C0FA73;
+  --primary-400: #57a203;
+
+  /* 中性色調 */
+  --neutral-0: #ffffff;
+  --neutral-100: #f8f9fa;
+  --neutral-300: #dee2e6;
+	--neutral-500: #adb5bd;
+  --neutral-600: #6c757d;
+  --neutral-900: #212529;
+
+
+	/* 警示色調 */
+	--danger-300: #D74F4F;
+}

@@ -1,0 +1,44 @@
+/* 元件樣式
+各 UI 元件單一檔案或合併，例如按鈕（button）、卡片（card）、表單（form）…等，搭配 BEM 或其他命名方法來模組化管理 */
+
+
+/* 麵包屑標線樣式 */
+/*【虛擬元素】寫法：在每個符合 .breadcrumb-item + .breadcrumb-item 樣式的元素【之前 (::before)】，插入設定之樣式 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px; /* 設定分隔符號的上下左右間距 */
+  font-weight: 700; /* 設定字體粗細 */
+  color: var(--neutral-300);
+}
+
+/* 圓點樣式 */
+.list-disc {
+  list-style-type: disc;
+}
+/*調整圓點大小 (替代寫法?) */
+ul.list-disc li::marker {
+  font-size: 10px;
+}
+
+
+/* 按鈕樣式 */
+.btn {
+	/* padding: 8px 15px; 設定按鈕內距 */
+	border-radius: 4px; /* 設定按鈕圓角 */
+	cursor: pointer; /* 設定滑鼠指標為手形 */
+	border: none; /* 移除按鈕邊框 */
+	background-color: transparent; /* 設定按鈕背景為透明 */
+}
+.btn-sign-up {
+	background-color: var(--neutral-900);
+	color: var(--neutral-100);
+	width: 115px;
+	height: 48px;
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	.btn-sign-up-sm {
+		padding: 8px 16px; /* 設定按鈕內距 */
+	}
+}

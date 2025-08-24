@@ -1,0 +1,29 @@
+/* 引用 "Noto Sans TC" 字體 (從 https://fonts.google.com/) */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+/* 引用 Montserrat 字體 (從 https://fonts.google.com/) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@import './base/reset.scss';
+@import './helper/variables.scss';
+@import './base/base.scss';
+
+@import './helper/utils.scss';
+
+// 拆分自 components.css
+@import './components/components.scss';
+@import './components/breadcrumb.scss';
+@import './components/button.scss';
+
+// 拆分自 layout.css
+@import './layout/layout.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+// 各頁面樣式
+@import './pages/index.scss';
+@import './pages/story.scss';
+@import './pages/product_list.scss';
+@import './pages/product.scss';

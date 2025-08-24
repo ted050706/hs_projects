@@ -1,0 +1,487 @@
+/* 通用工具樣式
+收納通用工具類樣式，例如 .text-center, .mt-1 等原子或功能類別，用作快速布局或重複使用 */
+
+/* 單獨引用顏色樣式 */
+/* 主色調 */
+.primary-100 {
+	color: var(--primary-100);
+	// color: $primary-100;  /* SCSS 變數寫法 */
+}
+.primary-400 {
+  color: var(--primary-400);
+}
+
+/* 中性色調 */
+.neutral-0 {
+  color: var(--neutral-0);
+}
+.neutral-100 {
+  color: var(--neutral-100);
+}
+.neutral-300 {
+  color: var(--neutral-300);
+}
+.neutral-500 {
+	color: var(--neutral-500);
+}
+.neutral-600 {
+  color: var(--neutral-600);
+}
+.neutral-900 {
+  color: var(--neutral-900);
+}
+
+/* 功能色調 */
+.danger-300 {
+	color: var(--danger-300);
+}
+
+
+/* 設定 Typography 字體樣式 (不一定和 html 標籤對應) */
+/* 設定文字置中 */
+.ta-center {
+  text-align: center;
+}
+
+/* 消除底線 */
+.td-none {
+  text-decoration: none;
+}
+
+.tg-H1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 5%;
+}
+.tg-H2 {
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 32px;
+	line-height: 120%;
+	letter-spacing: 5%;
+}
+.tg-H3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 5%;
+}
+.tg-H4 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 5%;
+  color: var(--neutral-900);
+}
+.tg-H5 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 5%;
+}
+.tg-H6 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 5%;
+}
+.tg-label {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 5%;
+}
+.tg-p-md {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 5%;
+}
+.tg-p-sm {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 5%;
+}
+
+/* 特殊文字樣式 */
+.copyright-text {
+	/* 引用自 tg-p-sm 樣式 */
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 5%;
+
+	/* 補充樣式設定 */
+	text-align: center;
+  color: var(--neutral-600);
+}
+
+.p-text {
+	/* 引用自 tg-p-md 樣式 */
+	font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 5%;
+
+	/* 補充樣式設定 */
+	color: var(--neutral-900);
+}
+
+/* RWD 設計：767px 為較大的斷點，適合元素多的區塊 */
+@media(max-width: 767px) {
+		/* Typography 字體樣式 */
+	.tg-en-H4-md {
+		/* 待修：Montserrat 沒有正常套用？ */
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-style: Bold;
+		font-size: 24px;
+		line-height: 120%;
+		letter-spacing: 5%;
+	}
+	.tg-en-H6-md {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-style: Bold;
+		font-size: 16px;
+		line-height: 120%;
+		letter-spacing: 5%;
+	}
+	.tg-en-p-md {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 400;
+		font-style: regular;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 5%;
+	}
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	/* Typography 字體樣式 */
+	.tg-H3-sm {
+		font-family: "Noto Sans TC", sans-serif;
+		font-weight: 700;
+		font-style: bold;
+		font-size: 28px;
+		line-height: 120%;
+		letter-spacing: 5%;
+	}
+	.tg-H5-sm {
+		font-family: "Noto Sans TC", sans-serif;
+		font-weight: 700;
+		font-style: bold;
+		font-size: 20px;
+		line-height: 120%;
+		letter-spacing: 5%;
+	}
+	.tg-H6-sm {
+		font-family: "Noto Sans TC", sans-serif;
+		font-weight: 700;
+		font-style: Bold;
+		font-size: 16px;
+		line-height: 120%;
+		letter-spacing: 5%;
+	}
+}
+
+
+/* 設定排版 */
+
+/* 元件內距 */
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.pl-8 {
+  padding-left: 8px;
+}
+.pr-8 {
+  padding-right: 8px;
+}
+.p-12 {
+  padding: 12px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.pl-12 {
+  padding-left: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.pl-24 {
+  padding-left: 24px;
+}
+.py-32 {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.pt-32 {
+	padding-top: 32px;
+}
+.pb-48 {
+  padding-bottom: 48px;
+}
+.py-64 {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.py-151 {
+  padding-top: 151px;
+  padding-bottom: 151px;
+}
+
+/* RWD 設計：767px 為較大的斷點，適合元素多的區塊 */
+@media(max-width: 767px) {
+	/* 內距 */
+	.py-16-md {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	/* 內距 */
+	.py-0-sm {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.p-12-sm {
+		padding: 12px;
+	}
+	.pb-32-sm {
+		padding-bottom: 32px;
+	}
+	.py-87-sm {
+		padding-top: 87px;
+		padding-bottom: 87px;
+	}
+}
+
+/* 元件外距 */
+.mt-4 {
+  margin-top: 4px;
+}
+.mt-8 {
+	margin-top: 8px;
+}
+.mb-8 {
+	margin-bottom: 8px;
+}
+.ml-8 {
+	margin-left: 8px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mx-12 {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.mr-12 {
+	margin-right: 12px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mr-24 {
+	margin-right: 24px;
+}
+.mt-32 {
+	margin-top: 32px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+.mr-40 {
+	margin-right: 40px;
+}
+.my-48 {
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.ml-48 {
+  margin-left: 48px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mt-64 {
+  margin-top: 64px;
+}
+.mr-auto {
+  margin-right: auto;
+}
+
+/* RWD 設計：767px 為較大的斷點，適合元素多的區塊 */
+@media(max-width: 767px) {
+	/* 外距 */
+	.mt-0-md {
+		margin-top: 0;
+	}
+	.mt-12-md {
+		margin-top: 12px;
+	}
+	.mt-13-md {
+		margin-top: 13px;
+	}
+	.mt-24-md {
+		margin-top: 24px;
+	}
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	/* 外距 */
+	.mt-8-sm {
+		margin-top: 8px;
+	}
+	.mt-12-sm {
+		margin-top: 12px;
+	}
+	.mt-16-sm {
+		margin-top: 16px;
+	}
+	.mr-16-sm {
+		margin-right: 16px;
+	}
+	.mt-24-sm {
+		margin-top: 24px;
+	}
+	.mt-32-sm {
+		margin-top: 32px;
+	}
+}
+
+/* 區塊樣式 */
+
+/** flex 設計 */
+.d-flex {
+  display: flex;
+}
+
+/* 主軸 (預設是縱軸) */
+.align-center {
+  align-items: center;
+}
+
+/* 交叉軸 (預設是橫軸) */
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.gap-8 {
+	display: flex;
+	flex-wrap: wrap; /* 允許換行 */
+	gap: 8px; /* 設定間距為 8px */
+}
+
+/* 允許換行 */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+/* 設定圖片滿格 */
+.pic-fit-width {
+  width: 100%;
+  height: auto;
+}
+
+/* 元素隱藏 */
+.d-none {
+	display: none;
+}
+
+/* RWD 設計：767px 為較大的斷點，適合元素多的區塊 */
+@media(max-width: 767px) {
+	/* 元素隱藏 */
+	.d-none-md {
+		display: none;
+	}
+	/* 元素顯示 */
+	.d-inline-md {
+		display:inline;
+	}
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	/* 元素隱藏 */
+	.d-none-sm {
+		display: none;
+	}
+}
+
+
+/* 原子化設計 */
+
+/* 分隔線樣式 (有空待改，可進一步分離顏色) */
+.bb-section-1px {
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.bb-lebel-1px {
+  border-bottom: 1px solid var(--primary-400);
+  padding-bottom: 4px; /* 設定底線距離 4px */
+}
+
+/* 標線樣式 */
+.bt-gray-1px {
+	border-top: 1px solid var(--neutral-300);
+}
+.bl-black-1px {
+  border-left: 1px solid var(--neutral-900);
+}
+.bl-gray-3px {
+  border-left: 3px solid var(--neutral-300);
+}
+
+

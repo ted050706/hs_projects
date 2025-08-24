@@ -1,0 +1,31 @@
+/* 按鈕:左側導覽列 */
+.btn-side-nav {
+	text-decoration: none;
+	color: var(--neutral-900);
+}
+/* 指定同時具有 btn-side-nav 與 active 的樣式 */
+.btn-side-nav.active {
+	color: var(--primary-400);
+}
+
+
+/* 按鈕:底下頁數導覽列 */
+.btn-page-nav {
+	width: 40px;
+	height: 40px;
+	border-radius: 0px; /* 設定按鈕為直角 */
+}
+.btn-page-nav.active {
+	background-color: var(--primary-300);
+}
+/* 設定滑過按鈕之樣式 */
+.btn-page-nav:hover {
+	background-color: var(--neutral-100);
+}
+/* 設定點選按鈕之樣式 */
+.btn-page-nav:focus {
+	background-color: var(--primary-300);
+	outline: none;  /* 移除 autofocus 時的粗黑外框 */
+}
+
+

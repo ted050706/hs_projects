@@ -1,0 +1,29 @@
+/* 元素基本樣式
+HTML 元素如 body、a、h1~h6 等通用排版、字體、行距等樣式，作為整體樣式的基底 */
+
+
+/* (與助教 hw3 47:10 寫法不同，以下為參考寫法) */
+/**
+
+body {
+	font-family: "Noto Sans TC", sans-serif; /* 設定全站字體
+	font-size: 16px; /* 設定全站字體大小 
+	line-height: 1.5; /* 設定全站行高為 150% 
+	letter-spacing: 0.05em; /* 設定全站字距為 5% 
+	color: var(--neutral-900); /* 設定全站文字顏色 
+}
+
+img {
+	vertical-align: middle; /* 修正圖片底部空隙 
+	max-width: 100%; /* 限制圖片最大寬度為容器寬度 
+	height: auto; /* 讓圖片高度自動調整，維持比例 
+}
+
+a {
+	color: var(--neutral-900); /* 設定連結文字顏色 
+	text-decoration: none; /* 移除連結底線 
+	display: block; /* 設定連結為區塊元素 
+	font-weight: 500; /* 設定連結字體粗細為 500 
+}
+
+**/

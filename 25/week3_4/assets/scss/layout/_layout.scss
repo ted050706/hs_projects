@@ -1,0 +1,130 @@
+/* 結構布局樣式 
+如 header、footer、grid 系統、sidebar、nav、container…等，定義頁面的整體配置 */
+
+/** 12 格線系統設計 (hw2 - 8:17處) */
+.container {
+
+	/* width: 1296px; */
+
+	margin: 0 auto; /* 設定容器水平置中 */
+
+	/* RWD 設計 Step 1: 
+	  若寫死 width: 1296px，則小螢幕會多出x向捲軸，
+	  因此改用距寬度彈性的 max-width: 1296px */
+  /* RWD 設計 Step 3:
+	  由於已採用盒模型 box-sizing: border-box; 因此總寬 width 有包含 padding 內距而收縮，所以在 max-width 寬度需補加 12px*2 以抵銷內縮！
+		(hw3 - 5:00處) */
+	max-width: calc(1296px + (12px * 2)); 
+
+	/* RWD 設計 Step 2: 
+	  為小螢幕版保留左右基本內距 12px */
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* 允許換行 */
+
+	/* 校正外框的左右外距各一半 gap 寬度 */
+	margin-left: calc(-24px/2); 
+  margin-right: calc(-24px/2); 
+}
+
+.col-1 {
+  width: calc(100% / 12); /* 設定直排寬度為 12 分之一 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-2 {
+  width: calc(100% / 12 * 2); /* 設定直排寬度為 12 分之 2 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-3 {
+  width: calc(100% / 12 * 3); /* 設定直排寬度為 12 分之 3 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-4 {
+  width: calc(100% / 12 * 4); /* 設定直排寬度為 12 分之 4 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-5 {
+  width: calc(100% / 12 * 5); /* 設定直排寬度為 12 分之 5 */
+	
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-6 {
+  width: calc(100% / 12 * 6); /* 設定直排寬度為 12 分之 6 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-7 {
+  width: calc(100% / 12 * 7); /* 設定直排寬度為 12 分之 7 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-8 {
+  width: calc(100% / 12 * 8); /* 設定直排寬度為 12 分之 8 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-9 {
+  width: calc(100% / 12 * 9); /* 設定直排寬度為 12 分之 9 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-10 {
+  width: calc(100% / 12 * 10); /* 設定直排寬度為 12 分之 10 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-11 {
+  width: calc(100% / 12 * 11); /* 設定直排寬度為 12 分之 11 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+.col-12 {
+  width: 100%; /* 設定直排寬度為滿版 */
+  padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+}
+
+/* RWD 設計：767px 為較大的斷點，適合元素多的區塊 */
+@media(max-width: 767px) {
+	.col-12-md {
+		width: calc(100%); /* 設定直排寬度為 12 格 */
+		padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+	}
+	.col-6-md {
+  width: calc(100% / 12 * 6); /* 設定直排寬度為 12 分之 6 */
+  padding: 0 calc(12px/2); /* 設定直排的左右間距 (12px 除以 2) */
+	}
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	/* 待改：沒有落在 row 範圍內？ 先在 section1-sm 強制設定左右12px */
+	.col-12-sm {
+		width: calc(100%); /* 設定直排寬度為 12 格 */
+		padding: 0 calc(24px/2); /* 設定直排的左右間距 (24px 除以 2) */
+	}
+}
+
+
+
+/* 區塊樣式如 header, nav, footer 等 */
+.discount-banner {
+	background-color: var(--primary-200);
+	padding: 33.5px;
+	/* text-align: center; */
+}
+
+.footer {
+  background-color: var(--neutral-100);
+  padding: 64px 0;
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	.nav-sm {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footer-sm {
+		background-color: var(--neutral-100);
+		padding: 32px 0;
+	}
+}

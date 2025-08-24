@@ -1,0 +1,23 @@
+// 源自 components.css 的按鈕樣式
+
+/* 按鈕樣式 */
+.btn {
+	/* padding: 8px 15px; 設定按鈕內距 */
+	border-radius: 4px; /* 設定按鈕圓角 */
+	cursor: pointer; /* 設定滑鼠指標為手形 */
+	border: none; /* 移除按鈕邊框 */
+	background-color: transparent; /* 設定按鈕背景為透明 */
+}
+.btn-sign-up {
+	background-color: var(--neutral-900);
+	color: var(--neutral-100);
+	width: 115px;
+	height: 48px;
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media(max-width: 567px) {
+	.btn-sign-up-sm {
+		padding: 8px 16px; /* 設定按鈕內距 */
+	}
+}

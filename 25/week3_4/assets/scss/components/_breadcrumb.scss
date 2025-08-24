@@ -1,0 +1,10 @@
+// 源自 components.css 的麵包屑樣式
+
+/* 麵包屑標線樣式 */
+/*【虛擬元素】寫法：在每個符合 .breadcrumb-item + .breadcrumb-item 樣式的元素【之前 (::before)】，插入設定之樣式 */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px; /* 設定分隔符號的上下左右間距 */
+  font-weight: 700; /* 設定字體粗細 */
+  color: var(--neutral-300);
+}

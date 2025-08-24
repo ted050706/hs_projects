@@ -1,0 +1,65 @@
+.header {
+  background-image: url("../assets/images/header-pic/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section1 {
+  border-radius: 12px;
+  padding: 32px;
+  gap: 12px;
+  background-color: var(--primary-100);
+}
+
+.pic1 {
+  /* width: auto; */
+  /* width: 1076px; */
+  border-bottom: 1px;
+  gap: 24px;
+
+  /* margin: 0 auto;  */
+}
+
+/* RWD 設計：567px 為較小的斷點，適合元素少的區塊 */
+@media (max-width: 567px) {
+
+	/* 區塊樣式 */
+  .header-sm {
+    background-image: url("../assets/images/header-pic/hero-sm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+		/* 為套用亮度遮罩 */
+    position: relative;
+  }
+
+	/* 底圖亮度遮罩 */
+  .header-mask-sm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+		z-index: 1;
+    pointer-events: none; /* 避免遮罩擋住點擊 */
+
+		/* 遮罩會導致文字重直置頂，用 flex 將文字設成垂直置中 */
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+  }
+
+	.section1-sm {
+		padding: 24px;
+
+		text-align: left;
+
+		/* 待改：col-12-sm 沒效果？ 強制設定左右12px */
+		margin: 0 12px;
+	}
+
+}
